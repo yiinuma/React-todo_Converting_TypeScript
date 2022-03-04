@@ -24,6 +24,9 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   ignorePatterns: ['.eslintrc.js'],
   rules: {
+    'react/button-has-type': 'off',
+    'react/prop-types': 'off',
+    'typescript-eslint/explicit-function-return-type': 'off',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     'import/prefer-default-export': 'off',
@@ -58,4 +61,4 @@ module.exports = {
       },
     },
   },
-}
+};
