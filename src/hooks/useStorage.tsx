@@ -24,7 +24,7 @@ export const useStorage = () => {
   };
 
   const clearTodoList = (): void => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(null));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([]));
     setTodoList([]);
   };
 

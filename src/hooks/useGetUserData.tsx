@@ -31,8 +31,7 @@ export const useGetUserData = () => {
         toast.error('dataを取得できませんでした');
         setUserData([]);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [getLimitDay]);
 
   return { userData, getUserData };
 };

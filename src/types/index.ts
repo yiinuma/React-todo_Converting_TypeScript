@@ -2,7 +2,7 @@ export type TodoType = {
   id: string | number;
   text: string;
   limit: string;
-  complete: boolean | string;
+  complete: boolean;
 };
 
 export type UserType = {

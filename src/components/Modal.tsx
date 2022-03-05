@@ -88,7 +88,6 @@ export const Modal: VFC<Props> = memo((props) => {
                 onChange={(e) => {
                   setEditText(e.target.value);
                 }}
-                // type="text"
                 className="text-m placeholder-blueGray-300 w-full rounded border-0 px-2 text-gray-600 shadow outline-none focus:outline-none focus:ring"
                 required
               />

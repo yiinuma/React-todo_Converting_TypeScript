@@ -18,15 +18,18 @@ export const ClearList: VFC<Props> = memo((props) => {
         <input
           type="button"
           value="削除"
-          className="ml-2 cursor-pointer rounded bg-red-300 bg-white px-4 py-2 font-bold"
-          onClick={clearTodoList}
+          className="ml-2 cursor-pointer rounded bg-red-200 bg-white px-4 py-2 font-bold"
+          onClick={() => {
+            toast.dismiss();
+            clearTodoList();
+          }}
         />
       </span>
     ));
   };
 
   return (
-    <ApiButton disabled={todoList !== undefined} onClick={onClickClearTask}>
+    <ApiButton disabled={!todoList.length} onClick={onClickClearTask}>
       全てのTodoListを削除
     </ApiButton>
   );

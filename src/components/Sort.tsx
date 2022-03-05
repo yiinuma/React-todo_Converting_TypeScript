@@ -17,11 +17,11 @@ export const Sort: VFC<Props> = memo((props) => {
     let sortName;
     if (target === 'id') {
       sortName = '入力順';
+      toast.success(`${sortName}で並び替えました`);
     } else if (target === 'limit') {
       sortName = '期限順';
+      toast.success(`${sortName}で並び替えました`);
     }
-    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-    toast.success(`${sortName}で並び替えました`);
     putTodoList(sortTodoList);
   };
 
